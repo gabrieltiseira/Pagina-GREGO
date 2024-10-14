@@ -17,7 +17,6 @@ body{
     background-image:  linear-gradient( rgba(191, 60, 60, 0.342), rgba(0, 0, 0, 0.748)),url(img/fondo\ Grego.jpg);
     background-size: 100%;
     background-color: #4f1717;
-    background-size: 100%;
     background-repeat: no-repeat;
     font-size: 125%;
     font-family: "britanic";
@@ -49,6 +48,12 @@ a{
     border: 5px solid  #7d3c3c;
     background-color: #ffffff;
     padding: 7px;
+    transition: 1s;
+}
+
+.boton:hover{
+    padding: 10px 20px;
+    font-size: 110%;
 }
 
 .header_logo{
@@ -59,15 +64,14 @@ a{
 
 .titulo{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: #ffffff;
     border: 5px solid #4f1717;
-    border-radius: 10px;
     font-size: 1.8rem;
     color: #7d3c3c;
     font-family: "varsity";
-    
+    margin: 0 30px;
 }
 
 .nombre{
