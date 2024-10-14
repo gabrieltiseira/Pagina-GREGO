@@ -141,7 +141,6 @@ li{
     justify-content: center;
     align-items: flex-start;
     background-color: #ffffff;
-    border-radius: 20px;
     text-align: center;
     font-size: 37pt;
 }
@@ -150,7 +149,7 @@ li{
     flex-grow: 1;
     overflow: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: -50px;
+    margin: 0 0 -40px;
 }
 
 .slider-box{
