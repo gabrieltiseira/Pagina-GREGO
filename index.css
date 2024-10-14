@@ -33,7 +33,7 @@ a{
 
 .header_menu{
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     align-items: flex-start;
     gap: 10px;
     padding: 0;
