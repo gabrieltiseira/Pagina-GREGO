@@ -24,6 +24,7 @@ body{
 
 li{
     list-style: none;
+    font-size: 1.1rem;
 }
 
 a{
@@ -37,6 +38,7 @@ a{
     align-items: flex-start;
     gap: 10px;
     padding: 0;
+    margin: 0 10%;
 }
 
 .boton{
@@ -53,7 +55,12 @@ a{
 
 .boton:hover{
     padding: 10px 20px;
-    font-size: 110%;
+    font-size: 90%;
+}
+
+.logo{
+    width: 110%;
+    overflow: hidden;
 }
 
 .header_logo{
@@ -77,6 +84,8 @@ a{
     margin: 2.5px;
     display: inline-block;
     text-align: center;
+    font-size: 200%;
+    overflow: hidden;
 }
 
 .acerca{
@@ -89,13 +98,10 @@ a{
 .ciclos{
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-}
-
-li{
-    font-size: 1.1rem;
 }
 
 .card{
@@ -104,19 +110,26 @@ li{
     display: inline-block;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 90%;
+    font-size: 80%;
     transition: 0.1s;
+    overflow: hidden;
 }
 
 .gest, .info, .text{
-    margin: 5px;
-    width: 220px;
-    height: 420px;
-    padding: 5px 16px;
+    width: 15%;
+    height: 10%;
+    padding: 5px 2px;
     background-color: #ffffff;
     border-radius: 30px;
     box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
     transition: 1s;
+}
+
+@media (max-width:700px){
+    .gest, .info, .text{
+        width: 35%;
+        height: 20%;
+    }
 }
 
 .gest{
@@ -133,19 +146,41 @@ li{
 
 .gest:hover, .info:hover, .text:hover{
     box-shadow: 0 16px 64px 0 rgba(0,0,0,0.2);
-    width: 320px;
-    padding-bottom: 6%;
+    width: 20%;
+    height: 15%;
+    padding:0 2% 1%;
     font-size: 120%;
 }
 
+@media (max-width:700px){
+    .gest{
+        border: 7px solid #bae1d9;
+    }
+    
+    .info{
+        border: 7px solid #4200fe;
+    }
+    
+    .text{
+        border: 7px solid #68d3cc;
+    }
+    .gest:hover, .info:hover, .text:hover{
+        width: 40%;
+        height: 25%;
+        padding:0 2% 1%;
+        font-size: 120%;
+    }
+}
+
 .cuadro_galeria{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     background-color: #ffffff;
     text-align: center;
-    font-size: 37pt;
+    font-size: 300%;
     margin-top: 20px;
 }
 
@@ -153,11 +188,11 @@ li{
     flex-grow: 1;
     overflow: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0 0 -40px;
+    margin: 0 0 -20px;
 }
 
 .slider-box{
-    width: 80%;
+    width: 100%;
     height: auto;
     overflow: hidden;
 }
@@ -213,6 +248,7 @@ li{
 }
 
 .footer{
+    width: 100%;
     color: #000;
     border: 7px solid #7d3c3c;
     border-radius: 10px;
