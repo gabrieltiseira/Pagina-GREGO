@@ -46,6 +46,7 @@ a{
     flex-grow: 1;
     display: inline-block;
     text-align: center;
+    align-content: center;
     border-radius: 20px;
     border: 5px solid  #7d3c3c;
     background-color: #ffffff;
@@ -91,6 +92,7 @@ a{
     text-align: center;
     font-size: 200%;
     overflow: hidden;
+    text-shadow: #4f1717 0 2px;
 }
 
 .acerca{
@@ -151,8 +153,13 @@ a{
     font-size: 120%;
 }
 
+.galeria{
+    display: flex;
+    justify-content: center;
+}
+
 .cuadro_galeria{
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -234,6 +241,13 @@ footer{
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+@media(max-width: 1039px){
+    .boton{
+        height: 40px;
+    }
+}
+
 @media(max-width: 991px){
     body{
         background-size: 150%;
@@ -284,8 +298,12 @@ footer{
         font-size: 120%;
     }
 
+    .cuadro_galeria{
+        width: 100%;
+    }
+
     .container{
         width: 100%;
-        /* font-size: 70%; */
+        font-size: 70%;
     }
 }
