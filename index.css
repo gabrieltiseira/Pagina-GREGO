@@ -42,7 +42,7 @@ a{
 }
 
 .boton{
-    flex-basis: 100px;
+    flex-basis: 50px;
     flex-grow: 1;
     display: inline-block;
     text-align: center;
